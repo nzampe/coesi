@@ -1,8 +1,8 @@
 <template>
   <v-app>
-    <Header></Header>
+    <app-header></app-header>
+    <app-menu v-if="this.$route.name == 'TablePublications' || this.$route.name == 'Glossary'"></app-menu>
     <v-content>
-      <Menu></Menu>
       <router-view></router-view>
     </v-content>
     
@@ -18,8 +18,8 @@ export default {
   name: 'App',
 
   components: {
-    Header,
-    Menu
+    appHeader: Header,
+    appMenu: Menu
   },
 
   data: () => ({

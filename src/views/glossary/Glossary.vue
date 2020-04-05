@@ -3,7 +3,6 @@
 
 <script>
 
-//import HelloWorldDos from '@/components/HelloWorldDos.vue'
 
 export default {
   name: 'Glossary',

@@ -1,16 +1,18 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Publicacion from '../views/publicacion/Publicacion.vue'
-import TablePublicaciones from '../views/publicacion/TablePublicaciones.vue'
-import Glossary from '../views/Glossary.vue'
+import Publication from '../views/publication/Publication.vue'
+import NewPublication from '../views/publication/FormPublication.vue'
+import TablePublications from '../views/publication/TablePublications.vue'
+import Glossary from '../views//glossary/Glossary.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
-  { path: '/publicacion/:id', name: 'Publicacion', component: Publicacion},
-  { path: '/publicaciones', name: 'Publicaciones', component: TablePublicaciones },
+  { path: '/publicacion/nueva', name: 'NewPublication', component: NewPublication},
+  { path: '/publicacion/:title', name: 'Publication', component: Publication},
+  { path: '/publicacion', name: 'TablePublications', component: TablePublications },
   { path: '/glosario', name: 'Glossary', component: Glossary},
 ]
 
